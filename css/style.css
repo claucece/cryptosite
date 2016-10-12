@@ -1,0 +1,236 @@
+@font-face {
+  font-family: 'Bebas Neue';
+}
+body {
+  background-color: #fafafa;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 50%;
+  color: #7e7e7e;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.2s linear;
+}
+a:hover {
+  color: #444;
+}
+#main-title {
+  font-size: 64px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 700;
+  line-height: 64px;
+  margin: 0 0 0;
+  margin-top: 900px;
+  padding: 20px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 1;
+  border-top: 1px solid #111;
+}
+/* Header */
+.header {
+  line-height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: #bebebe;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#logo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  float: left;
+  height: 100px;
+  width: 500px;
+  margin-left: 5px;
+  color: #000;
+}
+#title {
+  font-size: 48px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 300;
+}
+#nav {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-right: 130px;
+}
+#nav-item {
+  float: left;
+  position: relative;
+  padding: 10px;
+  font-weight: lighter;
+}
+/* main */
+#main {
+  display: block;
+}
+.text-center {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 140px;
+  height: 260px;
+  font-weight: 600;
+  padding: 0 40px;
+}
+.text-center:before {
+  content: '[';
+  left: 0;
+  line-height: 50px;
+}
+.text-center:after {
+  content: ']';
+  position: absolute;
+  right: 0;
+  line-height: 40px;
+}
+.text-center:after,
+.text-center:before {
+  position: absolute;
+  top: 20px;
+  font-size: 120px;
+  -webkit-animation: opacity 2s infinite;
+  animation: opacity 2s infinite;
+}
+.inside-text {
+  text-align: center;
+  margin-top: 300px;
+}
+h1 {
+  color: #111;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 100px;
+  letter-spacing: 1px;
+  display: inline;
+  float: left;
+  margin: 0;
+}
+p {
+  font-size: 22px;
+  display: inline-block;
+  line-height: 30px;
+}
+.small {
+  font-size: 12px;
+  padding-left: 110px;
+  display: inline;
+}
+/* footer */
+.long-footer {
+  background: #d3d3d3;
+  width: 100%;
+  position: fixed;
+  margin: 0;
+  padding: 15px;
+  padding-top: 5px;
+  left: 0;
+  bottom: 0;
+  margin-top: 100px;
+  align-items: center;
+  text-align: center;
+}
+.footer-text {
+  font-size: 16px;
+  text-align: center;
+  left: 50%;
+  display: inline;
+}
+/* syllabus */
+.line {
+  text-align: left;
+  position: relative;
+}
+.line:before {
+  content: " ";
+  width: 2px;
+  background: 1px #ccc;
+  height: 100%;
+  position: absolute;
+  left: calc(10% + 50px);
+  z-index: 1;
+}
+.line ul {
+  list-style: none;
+  padding: 0;
+}
+.timeline ul li {
+  z-index: 2;
+}
+.line-text {
+  display: inline-block;
+  color: #000;
+  margin-left: 220px;
+  width: 80%;
+  padding-top: 0;
+}
+.line-colortext {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 20px;
+}
+.inside-list {
+  list-style: none;
+}
+/* Glossary */
+.body-glossary {
+  margin: 100px;
+  margin-top: 6800px;
+}
+.first-glossary {
+  margin-top: 500px;
+  color: #000;
+}
+.glossary {
+  line-height: 30px;
+  color: #000;
+}
+/* About */
+.about-section {
+  margin-bottom: 200px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+.about-greeting {
+  font-size: 50px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 700;
+  line-height: 64px;
+  text-align: center;
+  z-index: 1;
+  padding-top: 20px;
+  color: #000;
+}
+.about-text {
+  line-height: 30px;
+  color: #000;
+}
+.readings {
+  margin-bottom: 200px;
+  margin-right: 100px;
+  margin-left: 100px;
+  line-height: 30px;
+  color: #000;
+}
+.readings ul li a {
+  color: #ffa500;
+}
+@media only screen and (max-width: 500px) {
+  .header {
+    width: 50%;
+  }
+}
